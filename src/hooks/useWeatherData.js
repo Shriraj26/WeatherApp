@@ -12,13 +12,12 @@ export const useWeatherData = () => {
     try {
       setLoading(true);
       const result = await instance.get("", { params });
-      console.log("result is ", result);
       setLoading(false);
       setSuccess(true);
       setData(result.data);
     } catch (e) {
-      console.log("error ", e);
       setLoading(false);
+      setSuccess(false);
       setError(true);
       setErrorMessage(e);
     }

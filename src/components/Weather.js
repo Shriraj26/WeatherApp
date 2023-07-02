@@ -30,6 +30,7 @@ export default function Weather() {
     if (ref) {
       ref.current.value = "San Diego";
       handleSubmit();
+      setBackgroundImage(getImageByHour());
     }
     return () => {
       window.removeEventListener("keypress", handleKeyPress);

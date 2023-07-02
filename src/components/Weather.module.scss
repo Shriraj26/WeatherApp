@@ -1,6 +1,4 @@
 .background {
-  // background-image: url("/nightWall2.jpg");
-  // opacity: 0.;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -12,15 +10,9 @@
 .container {
   width: 700px;
   display: flex;
-  // height: 100vh;
   flex-direction: column;
   align-items: center;
   padding: 2em;
-  // background-image: url("/day.jpg");
-  // opacity: 0.9;
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center;
 }
 
 .searchDiv {
@@ -29,11 +21,10 @@
   height: 50px;
   width: 80%;
   border-radius: 50px;
-  // border: 1px solid lightgrey;
+
   display: flex;
   padding: 0 20px 0 30px;
-  // padding-left: 30px;
-  // padding-right: 20px;
+
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
@@ -49,7 +40,6 @@
   cursor: pointer;
   user-select: none;
   &::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #d3d2d5;
     opacity: 0.8; /* Firefox */
   }
@@ -78,7 +68,7 @@
   width: 100%;
   height: auto;
   background-color: rgba(255, 255, 255, 0.2);
-  // background-color: #e8e8ec;
+
   border-radius: 10px;
   margin-top: 10px;
   padding: 10px;

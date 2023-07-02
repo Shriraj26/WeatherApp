@@ -7,7 +7,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 import { getImageByHour } from "@/utils/moment";
 
 export default function Weather() {
-  const backgroundImage = getImageByHour();
+  const [backgroundImage, setBackgroundImage] = useState(getImageByHour());
   const handleSubmit = async () => {
     await fetchData({
       q: `${ref.current.value}`,
